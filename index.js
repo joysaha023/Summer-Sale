@@ -58,3 +58,18 @@ btn.addEventListener('click', function(){
         document.getElementById("input-field").value = " ";
     }
 });
+
+const purchaseBtn = document.getElementById('makeBtn');
+purchaseBtn.addEventListener('click', function(){
+    const removeAll = document.getElementById('title-container');
+    removeAll.innerText = " ";
+
+    const removeTotal =  document.getElementById('totalPrice');
+    removeTotal.innerText = " ";
+
+    const discountElement = document.getElementById("discountPrice");
+    discountElement.innerText = " ";
+
+    const restTotal = document.getElementById("total")
+    restTotal.innerText = " ";
+})
